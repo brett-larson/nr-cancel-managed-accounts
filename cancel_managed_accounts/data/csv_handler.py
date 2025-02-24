@@ -1,6 +1,6 @@
 import csv
 from typing import List
-from utils.logger import Logger
+from cancel_managed_accounts.utils.logger import Logger
 
 # Create logger for the module
 logger = Logger(__name__).get_logger()

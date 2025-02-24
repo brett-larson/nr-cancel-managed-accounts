@@ -1,5 +1,5 @@
-from utils.logger import Logger
-from api.nerdgraph import NerdGraphClient
+from cancel_managed_accounts.utils import Logger
+from cancel_managed_accounts.api.nerdgraph import NerdGraphClient
 
 # Create logger for the module
 logger = Logger(__name__).get_logger()

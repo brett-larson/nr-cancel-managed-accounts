@@ -1,8 +1,8 @@
-from api.nerdgraph import NerdGraphClient
-from utils.logger import Logger
-from api.rate_limiter import RateLimiter
-from data.csv_handler import CSVHandler
-from api.queries.cancel_account import AccountManager
+from cancel_managed_accounts.api.nerdgraph import NerdGraphClient
+from cancel_managed_accounts.utils import Logger
+from cancel_managed_accounts.api.rate_limiter import RateLimiter
+from cancel_managed_accounts.data.csv_handler import CSVHandler
+from cancel_managed_accounts.api.queries.cancel_account import AccountManager
 
 # Create logger for the module
 logger = Logger(__name__).get_logger()
@@ -11,7 +11,7 @@ def main():
     logger.info("********** Application started. **********")
 
     rate_limiter = RateLimiter(calls_per_minute=5)
-    csv_handler = CSVHandler(file_path='data/cancel-accounts.csv')
+    csv_handler = CSVHandler(file_path='cancel_managed_accounts/data/cancel-accounts.csv')
     nerdgraph_client = NerdGraphClient()
     account_manager = AccountManager(nerdgraph_client)
 

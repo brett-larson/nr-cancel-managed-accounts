@@ -1,7 +1,7 @@
 from typing import Optional, Dict
 import requests
 import os
-from utils.logger import Logger
+from cancel_managed_accounts.utils import Logger
 from dotenv import load_dotenv
 
 # Load environment variables from .env file

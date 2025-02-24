@@ -1,7 +1,7 @@
 import time
 from collections import deque
 from datetime import datetime, timedelta
-from utils.logger import Logger
+from cancel_managed_accounts.utils import Logger
 
 # Create logger for the module
 logger = Logger(__name__).get_logger()
