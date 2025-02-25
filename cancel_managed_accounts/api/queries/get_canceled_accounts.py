@@ -27,7 +27,7 @@ class CanceledAccounts:
     def __init__(self, nerdgraph_client: NerdGraphClient):
         self.nerdgraph_client = nerdgraph_client
 
-    def get_canceled_accounts(self, is_canceled: bool) -> dict:
+    def get_canceled_accounts(self, is_canceled: bool) -> list[int]:
         """
         Get canceled accounts using the isCanceled flag.
         :param is_canceled: Boolean. Set to true to get canceled accounts by default
@@ -49,18 +49,22 @@ class CanceledAccounts:
 
 
     @staticmethod
-    def parse_canceled_accounts_response(response: dict) -> list[Any] | Any:
+    def parse_canceled_accounts_response(response: dict) -> list[int]:
         """
-        Parse the response from the get canceled accounts API.
+        Parse the response from the get canceled accounts API to extract canceled account numbers.
         :param response: dict
-        :return: dict
+        :return: list of canceled account numbers
         """
         try:
             logger.info("Parsing canceled accounts response")
-            if 'data' in response and 'actor' in response['data'] and 'organization' in response['data']['actor'] and 'accountManagement' in response['data']['actor']['organization']:
-                return response['data']['actor']['organization']['accountManagement']['managedAccounts']
-            else:
-                raise KeyError("Missing 'data', 'actor', 'organization', or 'accountManagement' in response")
+            managed_accounts = (
+                response.get('data', {})
+                        .get('actor', {})
+                        .get('organization', {})
+                        .get('accountManagement', {})
+                        .get('managedAccounts', [])
+            )
+            return [account['id'] for account in managed_accounts if account.get('isCanceled')]
         except (KeyError, TypeError) as e:
             logger.error(f"Error parsing canceled accounts response: {e}")
             return []
