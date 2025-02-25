@@ -1,0 +1,243 @@
+2025-02-24 13:36:29,173 - __main__ - INFO - Starting main function.
+2025-02-24 13:36:29,173 - api.rate_limiter - INFO - Checking calls: deque([])
+2025-02-24 13:36:29,173 - __main__ - INFO - Call 0 completed.
+2025-02-24 13:36:29,173 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 13, 36, 29, 173431)])
+2025-02-24 13:36:29,173 - __main__ - INFO - Call 1 completed.
+2025-02-24 13:36:29,173 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 13, 36, 29, 173431), datetime.datetime(2025, 2, 24, 13, 36, 29, 173495)])
+2025-02-24 13:36:29,173 - __main__ - INFO - Call 2 completed.
+2025-02-24 13:36:29,173 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 13, 36, 29, 173431), datetime.datetime(2025, 2, 24, 13, 36, 29, 173495), datetime.datetime(2025, 2, 24, 13, 36, 29, 173541)])
+2025-02-24 13:36:29,173 - __main__ - INFO - Call 3 completed.
+2025-02-24 13:36:29,173 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 13, 36, 29, 173431), datetime.datetime(2025, 2, 24, 13, 36, 29, 173495), datetime.datetime(2025, 2, 24, 13, 36, 29, 173541), datetime.datetime(2025, 2, 24, 13, 36, 29, 173577)])
+2025-02-24 13:36:29,173 - __main__ - INFO - Call 4 completed.
+2025-02-24 13:36:29,173 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 13, 36, 29, 173431), datetime.datetime(2025, 2, 24, 13, 36, 29, 173495), datetime.datetime(2025, 2, 24, 13, 36, 29, 173541), datetime.datetime(2025, 2, 24, 13, 36, 29, 173577), datetime.datetime(2025, 2, 24, 13, 36, 29, 173606)])
+2025-02-24 13:36:29,173 - api.rate_limiter - INFO - Rate limit reached. Waiting for 59.999791 seconds.
+2025-02-24 13:37:29,178 - __main__ - INFO - Call 5 completed.
+2025-02-24 13:37:29,182 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 13, 36, 29, 173431), datetime.datetime(2025, 2, 24, 13, 36, 29, 173495), datetime.datetime(2025, 2, 24, 13, 36, 29, 173541), datetime.datetime(2025, 2, 24, 13, 36, 29, 173577), datetime.datetime(2025, 2, 24, 13, 36, 29, 173606), datetime.datetime(2025, 2, 24, 13, 36, 29, 173640)])
+2025-02-24 13:37:29,182 - __main__ - INFO - Call 6 completed.
+2025-02-24 13:37:29,182 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 13, 37, 29, 182054)])
+2025-02-24 13:37:29,183 - __main__ - INFO - Call 7 completed.
+2025-02-24 13:37:29,183 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 13, 37, 29, 182054), datetime.datetime(2025, 2, 24, 13, 37, 29, 182981)])
+2025-02-24 13:37:29,183 - __main__ - INFO - Call 8 completed.
+2025-02-24 13:37:29,183 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 13, 37, 29, 182054), datetime.datetime(2025, 2, 24, 13, 37, 29, 182981), datetime.datetime(2025, 2, 24, 13, 37, 29, 183082)])
+2025-02-24 13:37:29,183 - __main__ - INFO - Call 9 completed.
+2025-02-24 13:37:29,183 - __main__ - INFO - Main function completed.
+2025-02-24 14:00:28,694 - __main__ - INFO - ********** Application started. **********
+2025-02-24 14:00:28,694 - data.csv_handler - ERROR - File not found: data/accounts.csv
+2025-02-24 14:00:28,694 - __main__ - INFO - Account numbers: []
+2025-02-24 14:00:28,695 - __main__ - INFO - ********** Application finished. **********
+2025-02-24 14:01:05,719 - __main__ - INFO - ********** Application started. **********
+2025-02-24 14:01:05,719 - data.csv_handler - INFO - Successfully read 3 account numbers from data/cancel-accounts.csv.
+2025-02-24 14:01:05,719 - __main__ - INFO - Account numbers: [6471257, 6471260, 6471261]
+2025-02-24 14:01:05,719 - __main__ - INFO - ********** Application finished. **********
+2025-02-24 14:22:34,857 - __main__ - INFO - ********** Application started. **********
+2025-02-24 14:22:34,858 - data.csv_handler - INFO - Successfully read 3 account numbers from data/cancel-accounts.csv.
+2025-02-24 14:22:34,858 - __main__ - INFO - Account numbers: [6471257, 6471260, 6471261]
+2025-02-24 14:22:34,858 - api.rate_limiter - INFO - Checking calls: deque([])
+2025-02-24 14:22:34,858 - __main__ - INFO - Canceling account 6471257.
+2025-02-24 14:22:34,858 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:22:35,818 - api.queries.cancel_account - INFO - Successfully canceled account 6471257.
+2025-02-24 14:22:35,819 - __main__ - INFO - Response: {'id': None, 'isCanceled': None, 'name': None}
+2025-02-24 14:22:35,819 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 14, 22, 34, 858232)])
+2025-02-24 14:22:35,819 - __main__ - INFO - Canceling account 6471260.
+2025-02-24 14:22:35,819 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:22:37,703 - api.queries.cancel_account - INFO - Successfully canceled account 6471260.
+2025-02-24 14:22:37,704 - __main__ - INFO - Response: {'id': None, 'isCanceled': None, 'name': None}
+2025-02-24 14:22:37,704 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 14, 22, 34, 858232), datetime.datetime(2025, 2, 24, 14, 22, 35, 819759)])
+2025-02-24 14:22:37,704 - __main__ - INFO - Canceling account 6471261.
+2025-02-24 14:22:37,704 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:22:38,757 - api.queries.cancel_account - INFO - Successfully canceled account 6471261.
+2025-02-24 14:22:38,757 - __main__ - INFO - Response: {'id': None, 'isCanceled': None, 'name': None}
+2025-02-24 14:22:38,758 - __main__ - INFO - ********** Application finished. **********
+2025-02-24 14:29:26,504 - __main__ - INFO - ********** Application started. **********
+2025-02-24 14:29:26,504 - data.csv_handler - INFO - Successfully read 3 account numbers from data/cancel-accounts.csv.
+2025-02-24 14:29:26,504 - __main__ - INFO - Account numbers: [6471257, 6471260, 6471261]
+2025-02-24 14:29:26,505 - api.rate_limiter - INFO - Checking calls: deque([])
+2025-02-24 14:29:26,505 - __main__ - INFO - Canceling account 6471257.
+2025-02-24 14:29:26,505 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:29:27,603 - api.queries.cancel_account - INFO - Successfully canceled account 6471257.
+2025-02-24 14:29:27,604 - api.queries.cancel_account - INFO - Parsing cancel account response
+2025-02-24 14:29:27,604 - api.queries.cancel_account - ERROR - Error parsing cancel account response: 'data'
+2025-02-24 14:29:27,604 - __main__ - INFO - Response: {'id': None, 'isCanceled': None, 'name': None}
+2025-02-24 14:29:27,604 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 14, 29, 26, 505014)])
+2025-02-24 14:29:27,604 - __main__ - INFO - Canceling account 6471260.
+2025-02-24 14:29:27,604 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:29:28,379 - api.queries.cancel_account - INFO - Successfully canceled account 6471260.
+2025-02-24 14:29:28,380 - api.queries.cancel_account - INFO - Parsing cancel account response
+2025-02-24 14:29:28,380 - api.queries.cancel_account - ERROR - Error parsing cancel account response: 'data'
+2025-02-24 14:29:28,380 - __main__ - INFO - Response: {'id': None, 'isCanceled': None, 'name': None}
+2025-02-24 14:29:28,380 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 14, 29, 26, 505014), datetime.datetime(2025, 2, 24, 14, 29, 27, 604515)])
+2025-02-24 14:29:28,380 - __main__ - INFO - Canceling account 6471261.
+2025-02-24 14:29:28,380 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:29:29,205 - api.queries.cancel_account - INFO - Successfully canceled account 6471261.
+2025-02-24 14:29:29,206 - api.queries.cancel_account - INFO - Parsing cancel account response
+2025-02-24 14:29:29,206 - api.queries.cancel_account - ERROR - Error parsing cancel account response: 'data'
+2025-02-24 14:29:29,206 - __main__ - INFO - Response: {'id': None, 'isCanceled': None, 'name': None}
+2025-02-24 14:29:29,206 - __main__ - INFO - ********** Application finished. **********
+2025-02-24 14:33:28,870 - __main__ - INFO - ********** Application started. **********
+2025-02-24 14:33:28,871 - data.csv_handler - INFO - Successfully read 3 account numbers from data/cancel-accounts.csv.
+2025-02-24 14:33:28,871 - __main__ - INFO - Account numbers: [6471257, 6471260, 6471261]
+2025-02-24 14:33:28,871 - api.rate_limiter - INFO - Checking calls: deque([])
+2025-02-24 14:33:28,871 - __main__ - INFO - Canceling account 6471257.
+2025-02-24 14:33:28,871 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:33:29,774 - api.queries.cancel_account - INFO - Successfully canceled account 6471257.
+2025-02-24 14:33:29,774 - api.queries.cancel_account - INFO - Parsing cancel account response
+2025-02-24 14:33:29,774 - api.queries.cancel_account - ERROR - Error parsing cancel account response: "Missing 'data' or 'accountManagementCancelAccount' in response"
+2025-02-24 14:33:29,774 - __main__ - INFO - Response: {'id': None, 'isCanceled': None, 'name': None}
+2025-02-24 14:33:29,774 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 14, 33, 28, 871166)])
+2025-02-24 14:33:29,774 - __main__ - INFO - Canceling account 6471260.
+2025-02-24 14:33:29,774 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:33:30,567 - api.queries.cancel_account - INFO - Successfully canceled account 6471260.
+2025-02-24 14:33:30,568 - api.queries.cancel_account - INFO - Parsing cancel account response
+2025-02-24 14:33:30,568 - api.queries.cancel_account - ERROR - Error parsing cancel account response: "Missing 'data' or 'accountManagementCancelAccount' in response"
+2025-02-24 14:33:30,568 - __main__ - INFO - Response: {'id': None, 'isCanceled': None, 'name': None}
+2025-02-24 14:33:30,568 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 14, 33, 28, 871166), datetime.datetime(2025, 2, 24, 14, 33, 29, 774922)])
+2025-02-24 14:33:30,568 - __main__ - INFO - Canceling account 6471261.
+2025-02-24 14:33:30,568 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:33:31,337 - api.queries.cancel_account - INFO - Successfully canceled account 6471261.
+2025-02-24 14:33:31,338 - api.queries.cancel_account - INFO - Parsing cancel account response
+2025-02-24 14:33:31,338 - api.queries.cancel_account - ERROR - Error parsing cancel account response: "Missing 'data' or 'accountManagementCancelAccount' in response"
+2025-02-24 14:33:31,338 - __main__ - INFO - Response: {'id': None, 'isCanceled': None, 'name': None}
+2025-02-24 14:33:31,338 - __main__ - INFO - ********** Application finished. **********
+2025-02-24 14:34:57,944 - __main__ - INFO - ********** Application started. **********
+2025-02-24 14:34:57,945 - data.csv_handler - INFO - Successfully read 3 account numbers from data/cancel-accounts.csv.
+2025-02-24 14:34:57,945 - __main__ - INFO - Account numbers: [6471257, 6471260, 6471261]
+2025-02-24 14:34:57,945 - api.rate_limiter - INFO - Checking calls: deque([])
+2025-02-24 14:34:57,945 - __main__ - INFO - Canceling account 6471257.
+2025-02-24 14:34:57,945 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:34:58,877 - api.queries.cancel_account - INFO - Successfully canceled account 6471257.
+2025-02-24 14:34:58,878 - api.queries.cancel_account - INFO - Parsing cancel account response
+2025-02-24 14:34:58,878 - api.queries.cancel_account - ERROR - Error parsing cancel account response: "Missing 'data' or 'accountManagementCancelAccount' in response"
+2025-02-24 14:34:58,878 - __main__ - INFO - Response: {'id': None, 'isCanceled': None, 'name': None}
+2025-02-24 14:34:58,878 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 14, 34, 57, 945192)])
+2025-02-24 14:34:58,879 - __main__ - INFO - Canceling account 6471260.
+2025-02-24 14:34:58,880 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:34:59,760 - api.queries.cancel_account - INFO - Successfully canceled account 6471260.
+2025-02-24 14:34:59,761 - api.queries.cancel_account - INFO - Parsing cancel account response
+2025-02-24 14:34:59,761 - api.queries.cancel_account - ERROR - Error parsing cancel account response: "Missing 'data' or 'accountManagementCancelAccount' in response"
+2025-02-24 14:34:59,761 - __main__ - INFO - Response: {'id': None, 'isCanceled': None, 'name': None}
+2025-02-24 14:34:59,761 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 14, 34, 57, 945192), datetime.datetime(2025, 2, 24, 14, 34, 58, 878926)])
+2025-02-24 14:34:59,764 - __main__ - INFO - Canceling account 6471261.
+2025-02-24 14:34:59,764 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:35:00,512 - api.queries.cancel_account - INFO - Successfully canceled account 6471261.
+2025-02-24 14:35:00,513 - api.queries.cancel_account - INFO - Parsing cancel account response
+2025-02-24 14:35:00,513 - api.queries.cancel_account - ERROR - Error parsing cancel account response: "Missing 'data' or 'accountManagementCancelAccount' in response"
+2025-02-24 14:35:00,513 - __main__ - INFO - Response: {'id': None, 'isCanceled': None, 'name': None}
+2025-02-24 14:35:00,513 - __main__ - INFO - ********** Application finished. **********
+2025-02-24 14:36:28,940 - __main__ - INFO - ********** Application started. **********
+2025-02-24 14:36:28,940 - data.csv_handler - INFO - Successfully read 3 account numbers from data/cancel-accounts.csv.
+2025-02-24 14:36:28,940 - __main__ - INFO - Account numbers: [6471257, 6471260, 6471261]
+2025-02-24 14:36:28,940 - api.rate_limiter - INFO - Checking calls: deque([])
+2025-02-24 14:36:28,940 - __main__ - INFO - Canceling account 6471257.
+2025-02-24 14:36:28,940 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:36:29,761 - api.queries.cancel_account - INFO - Successfully canceled account 6471257.
+2025-02-24 14:36:29,761 - __main__ - INFO - Response: {'id': 6471257, 'isCanceled': True, 'name': 'delete_test_01'}
+2025-02-24 14:36:29,761 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 14, 36, 28, 940337)])
+2025-02-24 14:36:29,761 - __main__ - INFO - Canceling account 6471260.
+2025-02-24 14:36:29,761 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:36:30,691 - api.queries.cancel_account - INFO - Successfully canceled account 6471260.
+2025-02-24 14:36:30,692 - __main__ - INFO - Response: {'id': 6471260, 'isCanceled': True, 'name': 'delete_test_02'}
+2025-02-24 14:36:30,692 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 14, 36, 28, 940337), datetime.datetime(2025, 2, 24, 14, 36, 29, 761397)])
+2025-02-24 14:36:30,692 - __main__ - INFO - Canceling account 6471261.
+2025-02-24 14:36:30,692 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:36:31,467 - api.queries.cancel_account - INFO - Successfully canceled account 6471261.
+2025-02-24 14:36:31,467 - __main__ - INFO - Response: {'id': 6471261, 'isCanceled': True, 'name': 'delete_test_03'}
+2025-02-24 14:36:31,467 - __main__ - INFO - ********** Application finished. **********
+2025-02-24 14:48:22,622 - __main__ - INFO - ********** Application started. **********
+2025-02-24 14:48:22,622 - data.csv_handler - INFO - Successfully read 3 account numbers from data/cancel-accounts.csv.
+2025-02-24 14:48:22,622 - __main__ - INFO - Account numbers: [6471257, 6471260, 6471261]
+2025-02-24 14:48:22,622 - api.rate_limiter - INFO - Checking calls: deque([])
+2025-02-24 14:48:22,622 - __main__ - INFO - Canceling account 6471257.
+2025-02-24 14:48:22,622 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:48:23,528 - api.queries.cancel_account - INFO - Successfully canceled account 6471257.
+2025-02-24 14:48:23,528 - __main__ - INFO - Response: {'id': 6471257, 'isCanceled': True, 'name': 'delete_test_01'}
+2025-02-24 14:48:23,528 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 14, 48, 22, 622511)])
+2025-02-24 14:48:23,528 - __main__ - INFO - Canceling account 6471260.
+2025-02-24 14:48:23,528 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:48:24,379 - api.queries.cancel_account - INFO - Successfully canceled account 6471260.
+2025-02-24 14:48:24,379 - __main__ - INFO - Response: {'id': 6471260, 'isCanceled': True, 'name': 'delete_test_02'}
+2025-02-24 14:48:24,379 - api.rate_limiter - INFO - Checking calls: deque([datetime.datetime(2025, 2, 24, 14, 48, 22, 622511), datetime.datetime(2025, 2, 24, 14, 48, 23, 528646)])
+2025-02-24 14:48:24,380 - __main__ - INFO - Canceling account 6471261.
+2025-02-24 14:48:24,380 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:48:25,370 - api.queries.cancel_account - INFO - Successfully canceled account 6471261.
+2025-02-24 14:48:25,371 - __main__ - INFO - Response: {'id': 6471261, 'isCanceled': True, 'name': 'delete_test_03'}
+2025-02-24 14:48:25,371 - __main__ - INFO - ********** Application finished. **********
+2025-02-24 14:51:28,733 - __main__ - INFO - ********** Application started. **********
+2025-02-24 14:51:28,733 - data.csv_handler - INFO - Successfully read 3 account numbers from data/cancel-accounts.csv.
+2025-02-24 14:51:28,733 - __main__ - INFO - Account numbers: [6471257, 6471260, 6471261]
+2025-02-24 14:51:28,733 - api.rate_limiter - INFO - Checking calls: 0 calls
+2025-02-24 14:51:28,733 - __main__ - INFO - Canceling account 6471257.
+2025-02-24 14:51:28,733 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:51:29,608 - api.queries.cancel_account - INFO - Successfully canceled account 6471257.
+2025-02-24 14:51:29,608 - __main__ - INFO - Response: {'id': 6471257, 'isCanceled': True, 'name': 'delete_test_01'}
+2025-02-24 14:51:29,608 - api.rate_limiter - INFO - Checking calls: 1 calls from 14:51:28 to 14:51:28
+2025-02-24 14:51:29,608 - __main__ - INFO - Canceling account 6471260.
+2025-02-24 14:51:29,608 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:51:30,406 - api.queries.cancel_account - INFO - Successfully canceled account 6471260.
+2025-02-24 14:51:30,407 - __main__ - INFO - Response: {'id': 6471260, 'isCanceled': True, 'name': 'delete_test_02'}
+2025-02-24 14:51:30,407 - api.rate_limiter - INFO - Checking calls: 2 calls from 14:51:28 to 14:51:29
+2025-02-24 14:51:30,408 - __main__ - INFO - Canceling account 6471261.
+2025-02-24 14:51:30,408 - api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 14:51:31,375 - api.queries.cancel_account - INFO - Successfully canceled account 6471261.
+2025-02-24 14:51:31,376 - __main__ - INFO - Response: {'id': 6471261, 'isCanceled': True, 'name': 'delete_test_03'}
+2025-02-24 14:51:31,376 - __main__ - INFO - ********** Application finished. **********
+2025-02-24 15:07:58,194 - __main__ - INFO - ********** Application started. **********
+2025-02-24 15:07:58,194 - cancel_managed_accounts.data.csv_handler - INFO - Successfully read 3 account numbers from data/cancel-accounts.csv.
+2025-02-24 15:07:58,194 - __main__ - INFO - Account numbers: [6471257, 6471260, 6471261]
+2025-02-24 15:07:58,195 - cancel_managed_accounts.api.rate_limiter - INFO - Checking calls: 0 calls
+2025-02-24 15:07:58,195 - __main__ - INFO - Canceling account 6471257.
+2025-02-24 15:07:58,195 - cancel_managed_accounts.api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 15:07:59,240 - cancel_managed_accounts.api.queries.cancel_account - INFO - Successfully canceled account 6471257.
+2025-02-24 15:07:59,241 - __main__ - INFO - Response: {'id': 6471257, 'isCanceled': True, 'name': 'delete_test_01'}
+2025-02-24 15:07:59,241 - cancel_managed_accounts.api.rate_limiter - INFO - Checking calls: 1 calls from 15:07:58 to 15:07:58
+2025-02-24 15:07:59,241 - __main__ - INFO - Canceling account 6471260.
+2025-02-24 15:07:59,242 - cancel_managed_accounts.api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 15:08:00,116 - cancel_managed_accounts.api.queries.cancel_account - INFO - Successfully canceled account 6471260.
+2025-02-24 15:08:00,116 - __main__ - INFO - Response: {'id': 6471260, 'isCanceled': True, 'name': 'delete_test_02'}
+2025-02-24 15:08:00,117 - cancel_managed_accounts.api.rate_limiter - INFO - Checking calls: 2 calls from 15:07:58 to 15:07:59
+2025-02-24 15:08:00,117 - __main__ - INFO - Canceling account 6471261.
+2025-02-24 15:08:00,117 - cancel_managed_accounts.api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 15:08:01,024 - cancel_managed_accounts.api.queries.cancel_account - INFO - Successfully canceled account 6471261.
+2025-02-24 15:08:01,025 - __main__ - INFO - Response: {'id': 6471261, 'isCanceled': True, 'name': 'delete_test_03'}
+2025-02-24 15:08:01,025 - __main__ - INFO - ********** Application finished. **********
+2025-02-24 15:20:16,104 - cancel_managed_accounts.main - INFO - ********** Application started. **********
+2025-02-24 15:20:16,104 - cancel_managed_accounts.data.csv_handler - ERROR - File not found: data/cancel-accounts.csv
+2025-02-24 15:20:16,104 - cancel_managed_accounts.main - INFO - Account numbers: []
+2025-02-24 15:20:16,104 - cancel_managed_accounts.main - INFO - ********** Application finished. **********
+2025-02-24 15:26:53,871 - cancel_managed_accounts.main - INFO - ********** Application started. **********
+2025-02-24 15:26:53,871 - cancel_managed_accounts.data.csv_handler - INFO - Successfully read 3 account numbers from cancel_managed_accounts/data/cancel-accounts.csv.
+2025-02-24 15:26:53,871 - cancel_managed_accounts.main - INFO - Account numbers: [6471257, 6471260, 6471261]
+2025-02-24 15:26:53,871 - cancel_managed_accounts.api.rate_limiter - INFO - Checking calls: 0 calls
+2025-02-24 15:26:53,871 - cancel_managed_accounts.main - INFO - Canceling account 6471257.
+2025-02-24 15:26:53,871 - cancel_managed_accounts.api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 15:26:54,787 - cancel_managed_accounts.api.queries.cancel_account - INFO - Successfully canceled account 6471257.
+2025-02-24 15:26:54,788 - cancel_managed_accounts.main - INFO - Response: {'id': 6471257, 'isCanceled': True, 'name': 'delete_test_01'}
+2025-02-24 15:26:54,788 - cancel_managed_accounts.api.rate_limiter - INFO - Checking calls: 1 calls from 15:26:53 to 15:26:53
+2025-02-24 15:26:54,788 - cancel_managed_accounts.main - INFO - Canceling account 6471260.
+2025-02-24 15:26:54,788 - cancel_managed_accounts.api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 15:26:55,719 - cancel_managed_accounts.api.queries.cancel_account - INFO - Successfully canceled account 6471260.
+2025-02-24 15:26:55,719 - cancel_managed_accounts.main - INFO - Response: {'id': 6471260, 'isCanceled': True, 'name': 'delete_test_02'}
+2025-02-24 15:26:55,719 - cancel_managed_accounts.api.rate_limiter - INFO - Checking calls: 2 calls from 15:26:53 to 15:26:54
+2025-02-24 15:26:55,719 - cancel_managed_accounts.main - INFO - Canceling account 6471261.
+2025-02-24 15:26:55,719 - cancel_managed_accounts.api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 15:26:57,287 - cancel_managed_accounts.api.queries.cancel_account - INFO - Successfully canceled account 6471261.
+2025-02-24 15:26:57,287 - cancel_managed_accounts.main - INFO - Response: {'id': 6471261, 'isCanceled': True, 'name': 'delete_test_03'}
+2025-02-24 15:26:57,287 - cancel_managed_accounts.main - INFO - ********** Application finished. **********
+2025-02-24 15:28:07,106 - cancel_managed_accounts.main - INFO - ********** Application started. **********
+2025-02-24 15:28:07,106 - cancel_managed_accounts.data.csv_handler - INFO - Successfully read 3 account numbers from cancel_managed_accounts/data/cancel-accounts.csv.
+2025-02-24 15:28:07,106 - cancel_managed_accounts.main - INFO - Account numbers: [6471257, 6471260, 6471261]
+2025-02-24 15:28:07,106 - cancel_managed_accounts.api.rate_limiter - INFO - Checking calls: 0 calls
+2025-02-24 15:28:07,106 - cancel_managed_accounts.main - INFO - Canceling account 6471257.
+2025-02-24 15:28:07,106 - cancel_managed_accounts.api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 15:28:07,908 - cancel_managed_accounts.api.queries.cancel_account - INFO - Successfully canceled account 6471257.
+2025-02-24 15:28:07,908 - cancel_managed_accounts.main - INFO - Response: {'id': 6471257, 'isCanceled': True, 'name': 'delete_test_01'}
+2025-02-24 15:28:07,908 - cancel_managed_accounts.api.rate_limiter - INFO - Checking calls: 1 calls from 15:28:07 to 15:28:07
+2025-02-24 15:28:07,908 - cancel_managed_accounts.main - INFO - Canceling account 6471260.
+2025-02-24 15:28:07,908 - cancel_managed_accounts.api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 15:28:08,823 - cancel_managed_accounts.api.queries.cancel_account - INFO - Successfully canceled account 6471260.
+2025-02-24 15:28:08,823 - cancel_managed_accounts.main - INFO - Response: {'id': 6471260, 'isCanceled': True, 'name': 'delete_test_02'}
+2025-02-24 15:28:08,823 - cancel_managed_accounts.api.rate_limiter - INFO - Checking calls: 2 calls from 15:28:07 to 15:28:07
+2025-02-24 15:28:08,823 - cancel_managed_accounts.main - INFO - Canceling account 6471261.
+2025-02-24 15:28:08,823 - cancel_managed_accounts.api.nerdgraph - INFO - Sending GraphQL request.
+2025-02-24 15:28:09,664 - cancel_managed_accounts.api.queries.cancel_account - INFO - Successfully canceled account 6471261.
+2025-02-24 15:28:09,664 - cancel_managed_accounts.main - INFO - Response: {'id': 6471261, 'isCanceled': True, 'name': 'delete_test_03'}
+2025-02-24 15:28:09,664 - cancel_managed_accounts.main - INFO - ********** Application finished. **********

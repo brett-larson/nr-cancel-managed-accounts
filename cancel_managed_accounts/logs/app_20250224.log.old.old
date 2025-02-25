@@ -1,0 +1,4 @@
+2025-02-24 16:57:02,789 - __main__ - INFO - ********** Application started. **********
+2025-02-24 16:57:02,790 - cancel_managed_accounts.data.csv_handler - ERROR - File not found: cancel_managed_accounts/data/cancel-accounts.csv
+2025-02-24 16:57:02,790 - __main__ - INFO - Account numbers: []
+2025-02-24 16:57:02,790 - __main__ - INFO - ********** Application finished. **********
